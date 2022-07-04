@@ -71,7 +71,7 @@ const editTodo = (itemId) => {
 	addNewTodoButton.style.display = "none";
 	createTodoButton.style.display = "none";
 	updateTodoButton.style.display = "block";
-	axios.get(`http://localhost:8000/posts/${itemId}`).then((res) => {
+	axios.get(`https://localhost:8000/posts/${itemId}`).then((res) => {
 		(idField.value = res.data.id),
 			(timeField.value = res.data.timestamp),
 			(bodyField.value = res.data.body);
